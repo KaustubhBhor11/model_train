@@ -2,7 +2,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_diabetes
 from sklearn.metrics import mean_squared_error
 import joblib
-import pandas
+import pandas as pd
 
 #Load test data
 X,y=load_diabetes(return_X_y=True)
