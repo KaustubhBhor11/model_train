@@ -1,5 +1,5 @@
 from sklearn.model_selection import train_test_split
-from skelearn.datasets import load_diabetes
+from sklearn.datasets import load_diabetes
 from sklearn.metrics import mean_squared_error
 import joblib
 import pandas
