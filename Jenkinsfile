@@ -20,13 +20,19 @@ pipeline{
     
     stage('Train model'){
       steps{
-        sh 'python3 train.py'
+        sh '''
+            . venv/bin/activate
+            python train.py
+        '''
       }
     }
     
     stage('Test model'){
       steps{
-        sh 'python3 test.py'
+        sh '''
+            . venv/bin/activate
+            python test.py
+        '''
       }
     }
     
